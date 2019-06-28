@@ -20,6 +20,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
     //track the list of currently playing movies
     ArrayList<Movie> movies;
 
-    // the reculer view
-    RecyclerView rvMovies;
+    // the recycler view
+
+    @BindView(R.id.rvMovies) RecyclerView rvMovies;
+
     // the adapter wired to the recycler view
     MovieAdapter adapter;
 
@@ -73,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MovieAdapter(movies);
 
         // resolve the recycler view and connect a layout
-        rvMovies = findViewById(R.id.rvMovies);
+//        rvMovies = findViewById(R.id.rvMovies);
+        ButterKnife.bind(MainActivity.this);
+
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
         rvMovies.setAdapter(adapter);
 
@@ -82,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         //get the configuration for the app creation
         getConfiguration();
 
-        // get the Now playing movie list
-        getNowPlaying();
+//        // get the Now playing movie list
+//        getNowPlaying();
 
     }
 

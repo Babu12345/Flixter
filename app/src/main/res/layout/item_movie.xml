@@ -30,6 +30,8 @@
         android:layout_marginRight="8dp"
         android:text="Movie Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPosterImage"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +47,8 @@
         android:layout_marginRight="48dp"
         android:paddingLeft="5dp"
         android:text="Movie Overview"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toEndOf="@+id/ivPosterImage"
