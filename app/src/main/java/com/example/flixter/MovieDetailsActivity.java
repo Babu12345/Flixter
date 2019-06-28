@@ -6,6 +6,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.flixter.models.Movie;
@@ -19,9 +20,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     Movie movie;
 
-    @BindView(R.id.tvTitle) TextView tvTitle;
-    @BindView(R.id.tvOverview) TextView tvOverview;
-    @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
+    @Nullable @BindView(R.id.tvTitle) TextView tvTitle;
+    @Nullable @BindView(R.id.tvOverview) TextView tvOverview;
+    @Nullable @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
 
 
     @Override
