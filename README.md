@@ -25,7 +25,9 @@ The following **stretch** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality!
+1. Changed the text color
+2. Changed the background for the recycler view
 
 ## Video Walkthrough
 
